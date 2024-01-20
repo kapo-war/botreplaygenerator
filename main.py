@@ -15,7 +15,8 @@ def main(unused_argv):
         create = sc_pb.RequestCreateGame(local_map=sc_pb.LocalMap(map_path=map_inst.path, map_data=map_inst.data(run_config)))
 
         # edit this part to change bot setting
-        # dfficulty: VeryEasy < Easy < Medium < MediumHard < Hard < Harder < VeryHard
+        # Race: Random, Protoss, Terran, Zerg
+        # Dfficulty: VeryEasy < Easy < Medium < MediumHard < Hard < Harder < VeryHard, CheatVision, CheatMoney, CheatInsane
         create.player_setup.add(
             type=sc_pb.Computer, race=sc_common.Random, difficulty=sc_pb.VeryHard)
         create.player_setup.add(
