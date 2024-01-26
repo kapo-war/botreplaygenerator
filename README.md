@@ -13,4 +13,4 @@ You should delete `extra_ports=self._ports` part located in line 338 of `pysc2\p
 
 ![image](https://github.com/kapo-war/botreplaygenerator/assets/67684178/8a3ba5f8-c92b-465d-87e3-05aec87c19fe)
 
-# 
+or just download using pip install pysc2=4.0.0
