@@ -12,6 +12,8 @@ parser.add_argument("map", type=str, help='"Simple64", "Automaton", "CyberForest
 parser.add_argument("difficulty", type=int, help="VeryHard:7, Harder:6, Hard:5, MediumHard:4, Medium:3")
 args = parser.parse_args()
 
+ROOT_PATH = "/sc2-dataset/BotvsBotReplay/" # edit this root path
+
 levels = {7:"VeryHard", 6:"Harder", 5:"Hard", 4:"MediumHard", 3:"Medium"}
 
 def main(unused_argv):
@@ -50,7 +52,9 @@ def main(unused_argv):
                 break
 
         # save replay => edit save directory
-        save_path = os.path.join("/sc2-dataset/BotvsBotReplay/", args.map, levels[args.difficulty])
+        save_path = os.path.join(ROOT_PATH, args.map, levels[args.difficulty])
+        if not os.path.exists(save_path):
+            os.makedirs(save_path)
         run_config.save_replay(controller.save_replay(), save_path)
 
 if __name__ == "__main__":
