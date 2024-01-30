@@ -8,7 +8,7 @@ import argparse
 import os
 
 parser = argparse.ArgumentParser()
-parser.add_argument("map", type=str, help='"Simple64", "Automation", "CyberForest", "KairosJunction", "KingsCove", "NewRepugnancy", "PortAleksander", "YearZero"')
+parser.add_argument("map", type=str, help='"Simple64", "Automaton", "CyberForest", "KairosJunction", "KingsCove", "NewRepugnancy", "PortAleksander", "YearZero"')
 parser.add_argument("difficulty", type=int, help="VeryHard:7, Harder:6, Hard:5, MediumHard:4, Medium:3")
 args = parser.parse_args()
 
