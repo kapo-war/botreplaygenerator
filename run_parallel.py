@@ -29,7 +29,7 @@ def run_by_levels():
     NUM_ITERATE = 25
     for sc2map in maps:
         for diff in levels.keys():
-            script_args = [[sc2map, str(diff)] for _ in range(NUM_PRALLEL)]
+            script_args = [[sc2map, str(diff)] for _ in range(NUM_PARALLEL)]
             print(script_args)
             for i in range(NUM_ITERATE):
                 with ThreadPoolExecutor() as executor:
