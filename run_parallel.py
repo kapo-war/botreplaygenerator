@@ -37,7 +37,6 @@ def run_by_levels():
             result_message = f"{sc2map}:{levels[diff]}"
             line = '-' * (len(result_message) + 22)
             print(f"\n{line}\nFINISH {result_message}\n{line}")
-            exit()
                     
 if __name__ == "__main__":
     run_by_levels()
