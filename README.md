@@ -17,6 +17,6 @@ or just download using pip install pysc2=4.0.0
 
 # Generate Bot vs Bot Replays
 - Prepare `botvsbot.py` and `run_parallel.py`
-- Change the `ROOT_PATH` in `botvsbot.py`
+- Change `ROOT_PATH` in `botvsbot.py` and `PYTHON_PATH` in `run_parallel.py`
 - Change the parallel option `NUM_PARALLEL, NUM_ITERATE` in `run_parallel.py` and run.
 
