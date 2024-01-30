@@ -16,5 +16,17 @@ You should delete `extra_ports=self._ports` part located in line 338 of `pysc2\p
 or just download using pip install pysc2=4.0.0
 
 # Generate Bot vs Bot Replays
-Prepare botvsbot.py, run_parallel.py in your home directory.
+Prepare botvsbot.py and run_parallel.py
+Generate directory like this or change save_path in botvsbot.py
+```
+/sc2-dataset/BotvsBotReplay/Automaton
+/sc2-dataset/BotvsBotReplay/CyberForest
+/sc2-dataset/BotvsBotReplay/KairosJunction
+/sc2-dataset/BotvsBotReplay/KingsCove
+/sc2-dataset/BotvsBotReplay/NewRepugnancy
+/sc2-dataset/BotvsBotReplay/PortAleksander
+/sc2-dataset/BotvsBotReplay/Simple64
+/sc2-dataset/BotvsBotReplay/YearZero
+```
 Change the parallel option in run_parallel.py and run.
+
