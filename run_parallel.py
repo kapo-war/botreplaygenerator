@@ -1,7 +1,7 @@
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
 
-python_path = '/home/vlab/botvsbot.py'
+PYTHON_PATH = '/home/vlab/botvsbot.py' # edit this part which botvsbot.py is stored
 
 difficulty = [7, 6, 5, 4, 3]
 maps = ["Simple64", "Automaton", "CyberForest", "KairosJunction", 
@@ -10,7 +10,7 @@ levels = {7: "VeryHard", 6: "Harder", 5: "Hard", 4: "MediumHard", 3: "Medium"}
 
 
 def run_simulation(args):
-    subprocess.run(['python', python_path] + args)
+    subprocess.run(['python', PYTHON_PATH] + args)
 
 def run_all_maps_and_levels():
     script_args = []
