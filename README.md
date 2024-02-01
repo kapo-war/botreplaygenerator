@@ -11,8 +11,6 @@ $pip install --upgrade pysc2/
 ```
 You should delete `extra_ports=self._ports` part located in line 338 of `pysc2\pysc2\env\sc2_env.py`
 
-![image](https://github.com/kapo-war/botreplaygenerator/assets/67684178/8a3ba5f8-c92b-465d-87e3-05aec87c19fe)
-
 or just download using `$pip install pysc2=4.0.0`
 
 # Generate Bot vs Bot Replays
@@ -20,3 +18,6 @@ or just download using `$pip install pysc2=4.0.0`
 - Change `ROOT_PATH` in `botvsbot.py` and `PYTHON_PATH` in `run_parallel.py`
 - Change the parallel option `NUM_PARALLEL, NUM_ITERATE` in `run_parallel.py` and run.
 
+# Transform the Bot vs Bot replays
+- Change previous `transform_replay_data.py` into new above one
+- Prepare `autotransform.py` and change `PATH1`, `PATH2`, then run
